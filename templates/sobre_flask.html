@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre o Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Sobre o Flask</h1>
+
+    <p>Flask é um <strong>microframework</strong> em Python para desenvolvimento web.</p>
+
+    <ul>
+        <li>É leve e rápido.</li>
+        <li>Usa o Jinja2 para renderizar HTML.</li>
+        <li>Permite criar rotas, APIs e páginas dinâmicas.</li>
+    </ul>
+
+    <p>Ideal para aprender os conceitos de back-end e front-end juntos!</p>
+
+    <p><a href="{{ url_for('primeira_pagina') }}">Voltar para a página inicial</a></p>
+
+</body>
+</html>

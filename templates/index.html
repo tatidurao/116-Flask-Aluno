@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha página da web</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Este é o {{ index_variable }}!</h1>
+
+    <img src="{{ url_for('static', filename='1.png') }}" alt="Imagem de exemplo">
+
+    <p>Nesta aula, aprenderemos a criar um aplicativo Flask usando modelos.
+       Eu usei a função <code>render_template</code> do módulo Flask.</p>
+
+    <p>Vamos para a página da web 🚀</p>
+
+    <!-- Aqui entra o novo link -->
+    <p><a href="{{ url_for('sobre_flask') }}">Saiba mais sobre o Flask</a></p>
+
+</body>
+</html>
